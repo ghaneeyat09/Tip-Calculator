@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>A tip calculator project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+               <h1>tip calculator</h1>
+            </div>
+            <div id="main-content">
+               <h3>how much was your bill?</h3>
+                 <div class="amount">   
+                   <i class="fas fa-dollar-sign" style="font-size: 22px;"></i>
+                   <input type="text" class="bill">
+                 </div>
+               <h3>how many people are sharing the bill?</h3>
+                 <div class="people">
+                   <i class="fas fa-user" style="font-size: 18px;"></i>
+                   <input type="text" class="no-of-people">
+                 </div>
+               <h3>how was your service</h3>
+               <label for="service"></label>
+                 <div class="rate">
+                    <select id="service" style="width: 400px; height: 38px;">
+                        <option class="service">Choose...</option>
+                        <option class="service">Great - 20%</option>
+                        <option class="service">Good - 10%</option>
+                        <option class="service">Bad - 2%</option>
+                    </select>
+                 </div>
+            </div>
+            <div id="sub-content">
+                <button class="btn">Calculate</button>
+                <h2 class="calc">tip amount  $<span class="tip-amount"></span> .00</h2>
+                <h2 class="calc">total amount  $<span class="total-amount"></span> .00</h2>
+                <h2 class="calc">each person owes  $<span class="individual-pay"></span> .00</h2>
+                
+            </div>
+          </div>
+
+          <script src="app.js"></script>
+    </body>
+</html>
